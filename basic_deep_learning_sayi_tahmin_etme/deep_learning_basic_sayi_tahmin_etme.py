@@ -12,7 +12,7 @@ y = X    # Gerçek değerlere olan uzaklıklar
 X = X / 100
 y = y / 100
 # Derin sinir ağı modelini oluşturma ve eğitme
-model = Sequential()
+model = load_model('sayi_tahmin_modeli2')
 model.add(Dense(64, activation='relu', input_dim=1))
 model.add(Dense(64, activation='relu'))
 model.add(Dense(1, activation='linear'))
@@ -21,11 +21,6 @@ model.fit(X, y, epochs=50, batch_size=32)
 
 # Modeli kaydetme
 save_model(model, 'sayi_tahmin_modeli2')
-
-# Modeli yükleme ve kullanma
-# loaded_model = load_model('sayi_tahmin_modeli')
-# loaded_model.fit(X, y, epochs=50, batch_size=32)
-# save_model(loaded_model, 'sayi_tahmin_modeli')
 
 def predict_number(number):
     normalized_number = number / 100

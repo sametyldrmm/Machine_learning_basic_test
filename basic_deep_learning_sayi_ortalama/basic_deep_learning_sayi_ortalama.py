@@ -28,11 +28,6 @@ model.fit(X, y, epochs=50, batch_size=32)
 # Modeli kaydetme
 save_model(model, 'sayi_ortalama')
 
-# Modeli yükleme ve kullanma
-# loaded_model = load_model('sayi_tahmin_modeli')
-# loaded_model.fit(X, y, epochs=50, batch_size=32)
-# save_model(loaded_model, 'sayi_tahmin_modeli')
-
 def predict_number(number, model):
     normalized_numbers = np.array([[number[0] /100, number[1] / 100]])
     predicted_value = model.predict(normalized_numbers)[0]
