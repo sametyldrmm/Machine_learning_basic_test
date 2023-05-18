@@ -1,10 +1,10 @@
 # Machine_learning_basic_test
 
-# Informations
+# Proje Amacı Genel Bilgi
 - ilk hedef olarak basit makine öğrenmesi projeleri geliştirmeye çalışıyorum amacım en basit örnekleri yaparak makine öğrenmesinin temmellerini öğrenmek
 - Bu konu hakkındaki ilk çalışmam olduğunu belirtebilrim. Hiç bir şey bilmediğimi yazdığım şeylerin tamamen mantıksız olabileceğini kabul ediyor ve bu konuyla yeni ilgileniyorsanız yazacağım şeyleri kronolojik sırası ile inceleyeniz. Zaman içerisinde güncellenen bir repo olacaktır. Yazdıklarımın tamamen mantıksız olsa dahi yeni başlayanların düşeceği yanılgılar ve yanlışlarla dolu olabilir . Kronolojik sıra ile bu yanlışları tek tek belirteceğim. Böyle bir durumda yeni başlayanlar için belirli bir zaman sonra çok iyi bir kaynak olacağını düşünüyorum. 
 
-# Models
+# Modeller
 ## The Sequential model
 Karşılaşacağım en basit model denilebilir.
 Olayı gayet basit bir şekilde kurgulanabilir olmasıdır.
@@ -22,7 +22,7 @@ Gerekir. Buna göre bir modelin inputu tek bir yerden geliyorsa, outputu tek bir
 - Output layer
 Genel yapı bu şekilde oluşur
 
-# Done Project
+# Yapılmış Uygulamalar
 ## Sayi tahmini
 Sequantial model kullanılmıştır
 1 input 1 output
@@ -35,7 +35,7 @@ Sayi tahimini programının üzerine inşa edilmiş olup çok boyutlu inputlarda
 - Layerlarla daha ilk kez çalıştığım için bu gibi bilgiler benim için yeni. Normalde Sequantial modelde böyle bir şey yapmazsınız
 - Çok basit bir şekilde tek göstermek istediğim 2 input ve 2 output nasıl verilir.
 
-# Target Project
+# Hedef Proje
 En son yapmak istediğim proje. 3 Boyutlu bir düzlemde rasgele dağılmış X hedef noktaya minumum Y kabul noktası kullanarak birbirine bağlamak.
 Bu projede ödül sistemi kullanmayı hedeflemekteyim.
 Anlatacağım projeyi normal cpp kodu ile yapmış olduğumun altını çizmek isterim. Bu yazdığım kod Naive bir algoritma kullanır durumda bu algoritma ile bir veri seti oluşturmayı hedefliyorum. Bu kod daha sonra paylaşıcaktır. Hedef projeye başlandığı zaman.
@@ -52,11 +52,12 @@ Anlatacağım projeyi normal cpp kodu ile yapmış olduğumun altını çizmek i
 - Bir kabul noktası ile bağlanabileceği bir hedef noktası arasındaki mesafe ne kadar kısa ise o kadar yüksek bir puana sahip olacaktır.
 - Daha az kabul noktası kullanmak her zaman daha yüksek puana sahip olacaktır.
 
-### Kaynaklar
+# Kaynaklar
 - https://keras.io/api/models/
 - https://keras.io/api/layers/
 - https://chat.openai.com/ (verdiği bilgiler her zaman doğru mu diye kontrol edilir yada edilecektir. Çok sıkı bir şekilde kullanılır her zaman yorumdan uzak net bilgiler sorulmaya özen gösterilir)
 
+# İletişim
 Her zaman ilk başta ana kaynak olan Kerasın dökümanları kullanılmalı
 Projelerde bana destek olup bu repoyu herkesin yararlanabileceği bir repo haline getirmek ve bana bu yolculuğumda yardım etmek isterseniz lütfen iletişime geçin
 Gmail: yildirimsamet051@gmail.com
