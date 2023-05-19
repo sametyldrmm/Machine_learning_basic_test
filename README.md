@@ -53,6 +53,34 @@ Anlatacağım projeyi normal cpp kodu ile yapmış olduğumun altını çizmek i
 - Bir kabul noktası ile bağlanabileceği bir hedef noktası arasındaki mesafe ne kadar kısa ise o kadar yüksek bir puana sahip olacaktır.
 - Daha az kabul noktası kullanmak her zaman daha yüksek puana sahip olacaktır.
 
+
+## Güncellemeler
+- İlk aşama için proje koşullarını basitleştirmeye karar verdim. Derin öğrenmeyi arka planda nasıl uygulayabileceğim konusunda henüz net bir fikrim yok.
+- Mevcut durumda, hedefi rastgele alanlardan ziyade 400x400 sabit bir alana indirgedim.
+- Sistem için öğrenebilmesi için veri oluşturmam gerekiyor ve daha sonra pekiştirmeli öğrenme modeliyle projeyi yeniden yapacağım. Veriyi giriş ve çıkışlara ayırmak gerekiyor.
+### Sistem için Öğrenme Amaçlı Giriş ve Çıkışlar
+  #### Girişler:
+- Sistemin mevcut alanı anlayıp bu alandan sonuç döndürmesini sağlamak için alanı tamamını x-y çiftleri olarak sağlamaya karar verdim.
+- Kabul noktalarının bağlanabileceği noktaların konumlarını sistemin anlayabilmesi için vermem gerekiyor.
+- Giriş sayısını 10.000 olarak belirledim, yani alanda 10.000 farklı diziden oluşan her biri 10 rasgele sayı içeren diziler istiyorum.
+- Giriş dizilerinin özellikleri:
+- Tüm alan noktaları = [[x0, y0], [x0, y1], ...] (400x400 alan içindeki tüm noktalar)
+- Bir rasgele nokta = [x0, y0]
+- Bir girişin tüm rasgele noktaları = [bir rasgele nokta, ...]
+- Bir giriş = tüm alan noktaları + bir girişin tüm rasgele noktaları
+- Tüm girişler = [bir giriş, ...] (10.000 giriş)
+
+#### Çıkışlar:
+- Giriş sayısını 10.000 olarak belirlediğim için her bir giriş dizisi için bir çıkış dizisi olacak.
+- Çıkış dizisinin özellikleri:
+- Tek bir giriş için istenen çıkış = [puan, x koordinatı 0, y koordinatı 0]
+- [tek bir giriş için istenen çıkış, ...] (10.000 çıkış)
+
+Tahmini giriş ve çıkış verileri oluşturuldu.
+Kodun C dilinde yazıldığını ve daha sonra ekleyeceğimi belirtmek istiyorum. Şu anda metin dosyalarını ekleyeceğim.
+
+
+
 # Kaynaklar
 - https://keras.io/api/models/
 - https://keras.io/api/layers/
@@ -124,6 +152,32 @@ I want to emphasize that the code I wrote is a Naive algorithm. I aim to create 
 - An acceptance point can be connected to a target point if the distance between them is a maximum of 30.
 - The shorter the distance between an acceptance point and a target point, the higher the score.
 - Using fewer acceptance
+
+## Updates
+- I have decided to simplify the project's conditions for the initial stage. I am currently unsure of how to implement deep learning in the background.
+- In the current state, the target has been reduced to a 2-dimensional plane with a fixed area of 400x400, instead of random areas.
+- To proceed with deep learning, I need to generate data, which will then be used with a reinforcement learning model for the project. Data needs to be separated into inputs and outputs.
+### Inputs and Outputs for the System to Learn
+ #### Inputs:
+
+- Since the goal is for the system to understand the existing area and return results from that area, I have decided to provide the entire area as x-y pairs.
+- In order for the system to understand where the accept points can connect, I need to provide the locations of connectable points within the area.
+- I have set the number of inputs to be 10,000, which means I want 10,000 different arrays of 10 random numbers within the area.
+- Features of the input arrays:
+- All area points = [[x0, y0], [x0, y1], ...] (all points within the 400x400 area)
+- A random point = [x0, y0]
+- All random points for an input = [random point, ...]
+- An input = all area points + all random points for an input
+- All inputs = [an input, ...] (10,000 inputs)
+ #### Outputs:
+
+- Since I have set the number of inputs to be 10,000, I will have one output array for each input array.
+- Features of an output array:
+- The desired output for a single input = [score, x coordinate 0, y coordinate 0]
+- [desired output for a single input, ...] (10000 outputs)
+
+Estimated input and output data have been generated.
+I will mention that the code is written in C and will be added later. For now, I will include the text files.
 
 # Resources
 - https://keras.io/api/models/
