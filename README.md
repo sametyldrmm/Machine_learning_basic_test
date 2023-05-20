@@ -79,8 +79,6 @@ Anlatacağım projeyi normal cpp kodu ile yapmış olduğumun altını çizmek i
 Tahmini giriş ve çıkış verileri oluşturuldu.
 Kodun C dilinde yazıldığını ve daha sonra ekleyeceğimi belirtmek istiyorum. Şu anda metin dosyalarını ekleyeceğim.
 
-
-
 # Kaynaklar
 - https://keras.io/api/models/
 - https://keras.io/api/layers/
