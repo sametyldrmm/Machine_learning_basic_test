@@ -47,6 +47,24 @@ Anlatacağım projeyi normal cpp kodu ile yapmış olduğumun altını çizmek i
 - Hangi algoritmaları kullanabilirim.
 - Hazır model kullanmak istersem var olan hazır modelleri nasıl bulabilrim ?
 - Çok fazla başlık var. Hiç bir şey bilmediğini kabul edebilenlere selam olsun :)
+
+## Öğrendiklerim
+Şu anda güzel bir projeye başlama fırsatı yakaladım ve bu projede genellikle temiz verilere sahip oldum. Verileri temizleme işlemi yapmadan sadece verileri daha kullanışlı ve yararlı hale getirmeye çalıştım. Elimdeki veri setinin temizlenmeye ihtiyacı yoktu.
+Öğrendiklerimi ayrı klasörlere ayırarak her biri için bir README.md dosyası oluşturmayı planlıyorum.
+Ne yazıkk bu projenin kodlarını paylaşmam mümkün değil çünkü proje bana ait bir proje değil.
+Zaman içerisinde yeni bir projeye başlayıp detaylıca kodlardan bahsedeceğim.
+
+- Bir model oluştururken nelere dikkat etmemiz gerektiğini öğrenme fırsatı buldum. Bu konuda %30-40 civarında bilgi edindiğimi düşünüyorum, ancak tecrübe eksikliğim hala büyük bir faktör.
+En azından hangi yöntemleri kullanabileceğimi ve ne zaman kullanabileceğimi cevaplamaya çalıştım.
+- Bir veri seti oluştururken nelere dikkat etmem gerektiği sorusunu bir kenara bırakarak, başlangıçta hazır bir veri setini nasıl daha iyi kullanabileceğimi düşündüm. Bu konuda mevcut fikirleri ve yöntemleri araştırdım. Bu konuyu da %30-40 civarında anladığımı düşünüyorum.
+- Hangi algoritmaları kullanabileceğim konusunda, öncelikle derin öğrenme (deep learning) alanında nelerin olduğunu ve bu aletlerin amaçlarının ne olduğunu öğrenmeye çalıştım. Her birini ayrı başlıklar altında incelemenin daha doğru olduğuna karar verdim. Algoritma dediğimiz şey aslında seçtiğimiz yolun kağıda yazılmış biçimi gibi düşünülebilir. Bu amaç doğrultusunda sorulan soruları şuna benzetmenin doğru olabileceğini düşünüyorum: Eğer bir aşçı olsaydım, yeni bir mutfakta sırasıyla neye bakardım? İlk olarak hangi araçlara sahip olduğuma bakardım. İkinci olarak hangi malzemelere sahip olduğuma bakardım. Üçüncü olarak ise bu malzemelerle ne yapabileceğime bakardım. Normalde iyi bir iş veya kod, benim için bu sırayla yapılan iştir. Ancak gerçekte sıra her zaman şu olur: Hangi araçlara sahibim? İstediğim yemeğe benzer bir tadı hangi malzemelerle alabilirim? Burada bahsedilen aletleri birer başlık altında detaylıca inceleyeceğim.
+- Hazır model kullanmak istersem var olan hazır modelleri nasıl bulabilrim sorusu aralarındaki en kolay soruydu aslında
+  
+  - Keras Model Deposu (Keras Model Zoo): Keras, popüler model mimarileri için önceden eğitilmiş modellerin bir koleksiyonunu içeren bir model deposu sunar. Bu modeller, genellikle büyük veri setleri üzerinde eğitilmiş ve genel nesne tanıma, görüntü sınıflandırma, dil modelleme gibi çeşitli görevlerde iyi performans gösterir. Keras Model Deposu'na buradan ulaşabilirsiniz. Bu modellerin ağırlıklarını indirebilir ve kendi projenizde kullanabilirsiniz. https://keras.io/api/applications/
+
+  - PyTorch Model Deposu (Torchvision): PyTorch ekosistemi de önceden eğitilmiş modellere erişim sağlayan bir model deposu olan Torchvision'a sahiptir. Torchvision'da, görüntü sınıflandırma, nesne tespiti ve segmentasyon gibi görevler için birçok önceden eğitilmiş model bulunur. Torchvision model deposuna buradan ulaşabilirsiniz. PyTorch modellerinin ağırlıklarını indirip kullanabilirsiniz. https://pytorch.org/vision/stable/models.html
+
+  - TensorFlow Hub: TensorFlow Hub, çeşitli görevler için önceden eğitilmiş modellerin bir koleksiyonunu içeren bir platformdur. TensorFlow Hub, TensorFlow projenize kolayca entegre edilebilir ve önceden eğitilmiş modellerin ağırlıklarını indirip kullanmanızı sağlar. TensorFlow Hub'a buradan ulaşabilirsiniz. https://tfhub.dev/
  ## Kurallar
 - Bir kabul noktası en fazla 3 hedef noktaya bağlanabilir.
 - Bir kabul noktası bir hedef noktası ile aralarındaki mesafe maksimum 30 ise bağlanabilir
