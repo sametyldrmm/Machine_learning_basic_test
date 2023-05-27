@@ -36,19 +36,22 @@ Sayi tahimini programının üzerine inşa edilmiş olup çok boyutlu inputlarda
 - Layerlarla daha ilk kez çalıştığım için bu gibi bilgiler benim için yeni. Normalde Sequantial modelde böyle bir şey yapmazsınız
 - Çok basit bir şekilde tek göstermek istediğim 2 input ve 2 output nasıl verilir.
 
-# Hedef Proje
-En son yapmak istediğim proje. 3 Boyutlu bir düzlemde rasgele dağılmış X hedef noktaya minumum Y kabul noktası kullanarak birbirine bağlamak.
-Bu projede ödül sistemi kullanmayı hedeflemekteyim.
-Anlatacağım projeyi normal cpp kodu ile yapmış olduğumun altını çizmek isterim. Bu yazdığım kod Naive bir algoritma kullanır durumda bu algoritma ile bir veri seti oluşturmayı hedefliyorum. Bu kod daha sonra paylaşıcaktır. Hedef projeye başlandığı zaman.
-
-## Bilmediklerim
-- Bir model oluştururken nelere dikat etmeliyim.
-- Bir veri seti oluşturuken nelere dikat etmeliyim.
-- Hangi algoritmaları kullanabilirim.
-- Hazır model kullanmak istersem var olan hazır modelleri nasıl bulabilrim ?
+### Bilmediklerim
+- Bir model oluştururken nelere dikat etmeliyim.      -Kısmen öğrenildi
+- Bir veri seti oluşturuken nelere dikat etmeliyim.   -Kısmen öğrenildi
+- Hangi algoritmaları kullanabilirim.                 -Kısmen öğrenildi
+- Hazır model kullanmak istersem var olan hazır modelleri nasıl bulabilrim ? -Tamamen öğrenildi en azından siteler bulundu. Nasıl kullanacağımıza işi yapmayı öğrendikten sonra bakacağız.
 - Çok fazla başlık var. Hiç bir şey bilmediğini kabul edebilenlere selam olsun :)
+- Yeni başlıklar artık tarih yazarak güncellemelerimi yapmayı planlıyorum
+- 27 mayıs 2023
+- Hedef 2 projesinde elimde bulunan verilerdeki output verisi birden fazla değişik veriden oluşuyor. Daha önceden öğrendiğim kısmında bahsettiğim bir kaç yöntem denemem gerekebilir.
+- Yöntem 1
+  - One hotcoding ile o sütunun içindeki verileri bir vectöre dönüştürmek ve output verimi bir vectör olarak almaya çalışmak. Çalışırmı bilmiyorum şuan deneme yapacağım model budur. Her bir şey eklediğimde TARGET_PROJECT_2 dosyasını güncellemeye çalışacağım ilk başta verilerimi analiz etmeye çalışacağım.
+- Sizinlede paylaşacağım csv verilerinde test için kullanılabilecek verilerin doğru cevapları için nasıl bir yöntem kullanmam gerektiğini bilmiyorum.
+ - Aklıma gelen ilk çözüm en başta eğitime başlamadan önce verinin bir kısmını bu iş için ayırmak olacak .
+ - Bir kere başarılı sayabileceğimiz bir proje ortaya koyabildiğimde test.csv nin gerçekte olması gereken outputlarını veriyi paylaşan kuruluşla irtibata geçip isteyeceğim.
 
-## Öğrendiklerim
+### Öğrendiklerim 26 Mayıs 2023
 Şu anda güzel bir projeye başlama fırsatı yakaladım ve bu projede genellikle temiz verilere sahip oldum. Verileri temizleme işlemi yapmadan sadece verileri daha kullanışlı ve yararlı hale getirmeye çalıştım. Elimdeki veri setinin temizlenmeye ihtiyacı yoktu.
 Öğrendiklerimi ayrı klasörlere ayırarak her biri için bir README.md dosyası oluşturmayı planlıyorum.
 Ne yazıkk bu projenin kodlarını paylaşmam mümkün değil çünkü proje bana ait bir proje değil.
@@ -65,18 +68,30 @@ En azından hangi yöntemleri kullanabileceğimi ve ne zaman kullanabileceğimi 
   - PyTorch Model Deposu (Torchvision): PyTorch ekosistemi de önceden eğitilmiş modellere erişim sağlayan bir model deposu olan Torchvision'a sahiptir. Torchvision'da, görüntü sınıflandırma, nesne tespiti ve segmentasyon gibi görevler için birçok önceden eğitilmiş model bulunur. Torchvision model deposuna buradan ulaşabilirsiniz. PyTorch modellerinin ağırlıklarını indirip kullanabilirsiniz. https://pytorch.org/vision/stable/models.html
 
   - TensorFlow Hub: TensorFlow Hub, çeşitli görevler için önceden eğitilmiş modellerin bir koleksiyonunu içeren bir platformdur. TensorFlow Hub, TensorFlow projenize kolayca entegre edilebilir ve önceden eğitilmiş modellerin ağırlıklarını indirip kullanmanızı sağlar. TensorFlow Hub'a buradan ulaşabilirsiniz. https://tfhub.dev/
- ## Kurallar
+
+
+# Hedef Proje
+## - Hedef proje 1
+En son yapmak istediğim proje. 3 Boyutlu bir düzlemde rasgele dağılmış X hedef noktaya minumum Y kabul noktası kullanarak birbirine bağlamak.
+Bu projede ödül sistemi kullanmayı hedeflemekteyim.
+Anlatacağım projeyi normal cpp kodu ile yapmış olduğumun altını çizmek isterim. Bu yazdığım kod Naive bir algoritma kullanır durumda bu algoritma ile bir veri seti oluşturmayı hedefliyorum. Bu kod daha sonra paylaşıcaktır. Hedef projeye başlandığı zaman.
+
+ 
+
+### Hedef proje 1 in kuralları
 - Bir kabul noktası en fazla 3 hedef noktaya bağlanabilir.
 - Bir kabul noktası bir hedef noktası ile aralarındaki mesafe maksimum 30 ise bağlanabilir
 - Bir kabul noktası ile bağlanabileceği bir hedef noktası arasındaki mesafe ne kadar kısa ise o kadar yüksek bir puana sahip olacaktır.
 - Daha az kabul noktası kullanmak her zaman daha yüksek puana sahip olacaktır.
 
 
-## Güncellemeler
+### Hedef proje 1 Güncellemeler
 - İlk aşama için proje koşullarını basitleştirmeye karar verdim. Derin öğrenmeyi arka planda nasıl uygulayabileceğim konusunda henüz net bir fikrim yok.
 - Mevcut durumda, hedefi rastgele alanlardan ziyade 400x400 sabit bir alana indirgedim.
 - Sistem için öğrenebilmesi için veri oluşturmam gerekiyor ve daha sonra pekiştirmeli öğrenme modeliyle projeyi yeniden yapacağım. Veriyi giriş ve çıkışlara ayırmak gerekiyor.
-### Sistem için Öğrenme Amaçlı Giriş ve Çıkışlar
+- Bilmediklerim değişti öğrendiklerim eklendi bu hedef proje daha sonraya ertelendi 
+
+### Sistem için Öğrenme Amaçlı Giriş ve Çıkışlar Hedef proje 1
   #### Girişler:
 - Sistemin mevcut alanı anlayıp bu alandan sonuç döndürmesini sağlamak için alanı tamamını x-y çiftleri olarak sağlamaya karar verdim.
 - Kabul noktalarının bağlanabileceği noktaların konumlarını sistemin anlayabilmesi için vermem gerekiyor.
@@ -96,6 +111,14 @@ En azından hangi yöntemleri kullanabileceğimi ve ne zaman kullanabileceğimi 
 
 Tahmini giriş ve çıkış verileri oluşturuldu.
 Kodun C dilinde yazıldığını ve daha sonra ekleyeceğimi belirtmek istiyorum. Şu anda metin dosyalarını ekleyeceğim.
+
+## - Hedef proje 2
+Bu proje https://www.kaggle.com/datasets/parisrohan/credit-score-classification?select=test.csv sitesinden aldığım Train.csv verileri ile yapılmaya çalışılacak
+Öğrendiklerimi bu projeye aktarıp daha fazla yeni soru sorup cevaplamaya çalışacağım. Sorular aklıma geldikçe burayada yazıyor olacağım.
+Projenin amacı Kredi puanlama sistemini derin öğrenme kullanarak yeniden hayata geçirmek.
+
+
+
 
 # Kaynaklar
 - https://keras.io/api/models/
