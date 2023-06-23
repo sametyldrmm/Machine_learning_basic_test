@@ -1,4 +1,5 @@
 # Machine_learning_basic_test
+- Derin öğrenme için notlarımı paylaştığım. Deneyim ve edindiğim bilgiler klosörünü kontrol ediniz.
 
 # Proje Amacı Genel Bilgi
 - ilk hedef olarak basit makine öğrenmesi projeleri geliştirmeye çalışıyorum amacım en basit örnekleri yaparak makine öğrenmesinin temmellerini öğrenmek
@@ -6,7 +7,7 @@
 
 # Modeller
 ## The Sequential model
-Karşılaşacağım en basit model denilebilir.
+Karşılaşacağımız en basit model denilebilir.
 Olayı gayet basit bir şekilde kurgulanabilir olmasıdır.
 Bu model çeşidinde modelin implementasyonu basittir. Bir modelin basit olması için:
 - Birden farklı input kaynağının olmaması
@@ -35,6 +36,9 @@ Sayi tahimini programının üzerine inşa edilmiş olup çok boyutlu inputlarda
 ## 2 input 2 output
 - Layerlarla daha ilk kez çalıştığım için bu gibi bilgiler benim için yeni. Normalde Sequantial modelde böyle bir şey yapmazsınız
 - Çok basit bir şekilde tek göstermek istediğim 2 input ve 2 output nasıl verilir.
+## Kalp krizi tahmini uygulaması
+- Elimizdeki verilerin temiz olduğunu söylemek gerekir bu işe yeni başlamış bir kişi için çok uygun birr csv dosyası olduğunu düşünüyorum. Hem bu işe yeni başlamış bir kişinin direk baştan bu konudan uzaklaşmaması için ilk projelerde temiz bir csv dosyası kullanmak hem genel mantığı anlamak hemde elinize çirkin bir veri seti geçtiğinde hangi düşünce ile onu temizlemek gerektiğini anlamak için idealdir. Benim yaptığım proje yaklaşık %78 doğruluk ile çalışıyor.(şuan burada olmayan bir test.csv si kullanarak bakılmıştır kodda bulunan şekilde bulunan sonuç değildir) bir seferinde %84 ü(kodda bulunan şekilde bakılmıştır) gören bir yapı kurmuştum fakat onu colabın dosyalarını sildiğini unutarak kaybettim.
+- Eğer projeyi yapmak isterseniz notlarım sizler için yeterli olacaktır . Tabikide google kullanmayacağınızı düşünmeyin
 
 ### Bilmediklerim
 - Bir model oluştururken nelere dikat etmeliyim.      -Kısmen öğrenildi
@@ -117,6 +121,7 @@ Bu proje https://www.kaggle.com/datasets/parisrohan/credit-score-classification?
 Öğrendiklerimi bu projeye aktarıp daha fazla yeni soru sorup cevaplamaya çalışacağım. Sorular aklıma geldikçe burayada yazıyor olacağım.
 Projenin amacı Kredi puanlama sistemini derin öğrenme kullanarak yeniden hayata geçirmek.
 
+- Bu projenin csv dosyası çirkindir çok fazla düzenleme gerekir. Sadece düzenleme kodu eklenecektir.
 
 
 
@@ -128,6 +133,8 @@ Projenin amacı Kredi puanlama sistemini derin öğrenme kullanarak yeniden haya
 # İletişim
 Her zaman ilk başta ana kaynak olan Kerasın dökümanları kullanılmalı
 Projelerde bana destek olup bu repoyu herkesin yararlanabileceği bir repo haline getirmek ve bana bu yolculuğumda yardım etmek isterseniz lütfen iletişime geçin
+
+                                          UZUN BİR SÜRE GÜNCELLENMEYECEK!!!!!
 
 Gmail: yildirimsamet051@gmail.com
 
