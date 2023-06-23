@@ -1,7 +1,7 @@
 # Genel Notlarım
 Amacım, topladığım notları anlaşılır bir şekilde düzenleyerek, bu alanda hiç bilgisi olmayan kişiler için bilgi edinmelerini sağlayacak bir başlangıç noktası oluşturmak.
 Vakit bulabildiğim bir zaman diliminde bu işin istatistik kısmı içinde bu şekildeki notlarımı paylaşacağım.
-Şimdilik bir başlangıç noktası oluşturması için [R ile istatistik]([http://www.example.com](https://github.com/sametyldrmm/R_statistics_code_and_slieds)) ilgili konu için hazırladığım repoya bakabilirsiniz.
+Şimdilik bir başlangıç noktası oluşturması için [R ile istatistik](https://github.com/sametyldrmm/R_statistics_code_and_slieds) ilgili konu için hazırladığım repoya bakabilirsiniz.
 
 ## Aktivasyon Fonksiyonları
 ### ReLU (Rectified Linear Unit):
