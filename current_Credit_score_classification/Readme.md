@@ -1,6 +1,6 @@
 # Credit score prediction app
 
-Bu projedeki amacımız deep learning kullanarak kredi score larını tahmin etmeye çalışacağız.
+Bu projedeki amacımız deep learning kullanarak kredi skorlarını tahmin etmeye çalışacağız.
 
 - Veri temizleme 
 - Model oluşturma
